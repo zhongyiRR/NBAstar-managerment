@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hero - Admin</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        .hero-list img {
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="page-header container">
+            <h1>NBA <small>添加球星</small></h1>
+        </div>
+    </header>
+    <div class="container hero-list">
+        <!-- method: 设置提交方式 action: 设置提交路径 -->
+        <form method="POST" action="/add">
+            <table class="table table-hover">
+                <tr>
+                    <td>姓名：</td>
+                    <td><input type="text" id="name" name="name"></td>
+                    <!-- name=张三 -->
+                </tr>
+                <tr>
+                    <td>年龄：</td>
+                    <td><input type="text" name="age"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" id="btn"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
